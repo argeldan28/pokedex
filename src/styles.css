@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapercave.com/wp/wp8813120.jpg');
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+    background-position: center center; /* Centra l'immagine */
+    background-size: cover; /* Assicura che l'immagine copra tutto lo schermo */
+    background-attachment: fixed; /* Fissa lo sfondo in posizione */
+  }
+  
+  h2 {
+    color: #ff6347;
+  }
+  
+  .pokemon-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pokemon-list li {
+    margin: 10px 0;
+  }
+  
+  .pokemon-list a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .pokemon-list a:hover {
+    color: #ff6347;
+  }

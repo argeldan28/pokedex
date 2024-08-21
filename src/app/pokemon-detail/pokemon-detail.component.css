@@ -1,0 +1,87 @@
+.pokemon-detail {
+    width: 100%;
+    max-width: 600px; /* Aumenta la larghezza massima della card */
+    margin: 100px auto; /* Centra la card orizzontalmente e posiziona verticalmente con spazio sopra e sotto */
+    padding: 20px; /* Aumenta il padding interno della card */
+    border-radius: 16px; /* Raggio del bordo per angoli più arrotondati */
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombra per un effetto di sollevamento */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transizione per il colore di sfondo e l'ombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7); /* Sfondo leggermente scuro con trasparenza per migliorare il contrasto */
+}
+
+.pokemon-name {
+    text-align: center;
+    font-size: 32px; /* Dimensione del font per il nome */
+    margin-bottom: 20px; /* Spazio sotto il nome */
+}
+
+.pokemon-image-container {
+    text-align: center;
+    margin-bottom: 20px; /* Spazio sotto l'immagine */
+}
+
+.pokemon-image {
+    max-width: 90%;
+    height: 200px; /* Mantiene le proporzioni corrette dell'immagine */
+    border-radius: 16px; /* Bordo arrotondato per l'immagine */
+    border: 4px solid #fff; /* Bordo bianco attorno all'immagine */
+}
+
+.pokemon-info {
+    font-size: 18px; /* Dimensione del font per le informazioni */
+    margin: 10px 0; /* Spazio sopra e sotto le informazioni */
+    
+}
+
+.pokemon-type {
+    display: inline-block;
+    padding: 8px 12px; /* Padding per i tipi */
+    border-radius: 8px; /* Raggio del bordo per i tipi */
+    margin-right: 10px; /* Spazio tra i tipi */
+    font-size: 16px; /* Dimensione del font per i tipi */
+    background-color: rgba(255, 255, 255, 0.3); /* Sfondo trasparente per i tipi */
+}
+
+.pokemon-stats {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.pokemon-stat {
+    padding: 10px 0; /* Padding per ogni statistica */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* Bordi sottili tra le statistiche */
+    font-size: 18px; /* Dimensione del font per le statistiche */
+}
+
+
+.back-button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px; /* Spazio sotto il pulsante */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pokeball-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}

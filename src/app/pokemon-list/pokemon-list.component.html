@@ -1,0 +1,25 @@
+
+  
+  <div class="pokemon-list">
+      <img class="logo" src="assets/pokemon-logo.png" alt="Pokémon Logo">
+      
+
+      <div class="search-container">
+        <div class="search-wrapper">
+          <img src="assets/pokeball.png" alt="Pokéball Icon" class="pokeball-icon">
+          <input type="text" placeholder="Search by name or type..." (input)="onSearch($event)" class="search-bar">
+        </div>
+      </div>
+      
+      <ul class="pokemon-grid">
+        <li *ngFor="let pokemon of filteredPokemonList" class="pokemon-card"
+            [ngStyle]="{ 'background-color': getCardBackgroundColor(pokemon.types) }">
+          <a [routerLink]="['/pokemon', pokemon.name]" class="pokemon-link">
+            <div class="pokemon-image">
+              <img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + pokemon.id + '.png'" alt="{{ pokemon.name }}" title="{{ pokemon.name }}">
+            </div>
+            <div class="pokemon-name">{{ pokemon.name | titlecase }}</div>
+          </a>
+        </li>
+      </ul>
+  </div>
